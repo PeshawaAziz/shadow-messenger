@@ -4,7 +4,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Shadow Messenger</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="../css/style.css" />
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
@@ -13,6 +13,77 @@
         />
     </head>
     <body>
+        <!-- container -->
+        <div class="container d-flex flex-column align-items-center my-4">
+            <!-- title -->
+            <h1 class="app-title text-light display-6 text-center">
+                Shadow Messenger
+            </h1>
+            <!-- chatrooms -->
+            <div class="chatrooms my-3 text-center text-light">
+                <div>
+                    <h3 class="display-6 fs-4">Choose a chatroom:</h3>
+                </div>
+                <div class="my-2">
+                    <button class="btn btn-danger rounded-3">General</button>
+                    <button class="btn btn-danger rounded-3">Gaming</button>
+                    <button class="btn btn-danger rounded-3">Music</button>
+                    <button class="btn btn-danger rounded-3">Science</button>
+                </div>
+            </div>
+            <!-- chat window -->
+            <div class="chat-window p-3 rounded-3">
+                <ul class="chat-list text-light list-group list-unstyled">
+                    <li class="message p-3 m-1 shadow-sm rounded-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nemo illum minima reiciendis explicabo natus quae
+                        dignissimos excepturi iste quod placeat nostrum, in
+                        nulla perferendis eum tempore, qui soluta adipisci
+                        accusamus.
+                    </li>
+                    <li class="message p-3 m-1 shadow-sm rounded-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nemo illum minima reiciendis explicabo natus quae
+                        dignissimos excepturi iste quod placeat nostrum, in
+                        nulla perferendis eum tempore, qui soluta adipisci
+                        accusamus.
+                    </li>
+                    <li class="message p-3 m-1 shadow-sm rounded-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nemo illum minima reiciendis explicabo natus quae
+                        dignissimos excepturi iste quod placeat nostrum, in
+                        nulla perferendis eum tempore, qui soluta adipisci
+                        accusamus.
+                    </li>
+                    <li class="message p-3 m-1 shadow-sm rounded-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nemo illum minima reiciendis explicabo natus quae
+                        dignissimos excepturi iste quod placeat nostrum, in
+                        nulla perferendis eum tempore, qui soluta adipisci
+                        accusamus.
+                    </li>
+                    <li class="message p-3 m-1 shadow-sm rounded-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nemo illum minima reiciendis explicabo natus quae
+                        dignissimos excepturi iste quod placeat nostrum, in
+                        nulla perferendis eum tempore, qui soluta adipisci
+                        accusamus.
+                    </li>
+                </ul>
+            </div>
+            <!-- new message form -->
+            <form class="new-message-form my-3">
+                <div class="input-group">
+                    <input
+                        class="message-input form-control"
+                        type="text"
+                        name="message"
+                        placeholder="Message"
+                    />
+                    <input class="btn btn-danger" type="submit" value="Send" />
+                </div>
+            </form>
+        </div>
         <script src="../js/chat.js"></script>
         <script src="../js/ui.js"></script>
         <script src="../js/app.js"></script>

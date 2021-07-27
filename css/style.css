@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #161616 !important;
+}
+
+.app-title {
+    font-family: "Poppins" !important;
+    font-weight: 500 !important;
+}
+
+.chat-window {
+    max-height: 60vh;
+    max-width: 500px;
+    overflow-y: auto;
+    background-color: #131313;
+}
+.chat-window::-webkit-scrollbar {
+    display: none;
+}
+
+.new-message-form {
+    width: 100%;
+    max-width: 500px !important;
+}
+
+.message {
+    background-color: #1b1b1b !important;
+    border: solid 1px #111111 !important;
+}
+
+.message-input {
+    background-color: #131313 !important;
+    color: #c7c7c7 !important;
+    border: solid 1px #111111 !important;
+}
