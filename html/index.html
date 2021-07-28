@@ -84,6 +84,23 @@
                 </div>
             </form>
         </div>
+        <!-- scripts -->
+        <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+        <script>
+            var firebaseConfig = {
+                apiKey: "AIzaSyC17jzGegId-5UxFY854Mgfb215EHDlhlA",
+                authDomain: "shadow-messenger.firebaseapp.com",
+                databaseURL:
+                    "https://shadow-messenger-default-rtdb.europe-west1.firebasedatabase.app",
+                projectId: "shadow-messenger",
+                storageBucket: "shadow-messenger.appspot.com",
+                messagingSenderId: "918954737365",
+                appId: "1:918954737365:web:cb8218a49029e8a4a1ac5c",
+            };
+            firebase.initializeApp(firebaseConfig);
+            const DATABASE = firebase.firestore();
+        </script>
         <script src="../js/chat.js"></script>
         <script src="../js/ui.js"></script>
         <script src="../js/app.js"></script>
