@@ -1,3 +1,7 @@
+* {
+    font-family: "Nunito";
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +9,7 @@ body {
 }
 
 .app-title {
-    font-family: "Poppins" !important;
+    font-family: "Poppins";
     font-weight: 500 !important;
 }
 
@@ -19,12 +23,13 @@ body {
     display: none;
 }
 
-.new-message-form {
+.message-form {
     width: 100%;
     max-width: 500px !important;
 }
 
-.message-input {
+.message-input,
+.username-input {
     background-color: #131313 !important;
     color: #c7c7c7 !important;
     border: solid 1px #111111 !important;
