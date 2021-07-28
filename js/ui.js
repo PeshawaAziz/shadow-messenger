@@ -16,5 +16,7 @@ class ChatUI {
         `;
 
         this.list.innerHTML += HTML_TEMP;
+        NEW_MESSAGE_FORM.reset();
+        updateScroll();
     }
 }
