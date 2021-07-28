@@ -10,8 +10,8 @@ body {
 }
 
 .chat-window {
+    width: 500px;
     max-height: 60vh;
-    max-width: 500px;
     overflow-y: auto;
     background-color: #131313;
 }
@@ -24,13 +24,12 @@ body {
     max-width: 500px !important;
 }
 
-.message {
-    background-color: #1b1b1b !important;
-    border: solid 1px #111111 !important;
-}
-
 .message-input {
     background-color: #131313 !important;
     color: #c7c7c7 !important;
     border: solid 1px #111111 !important;
+}
+
+.time {
+    color: #3d3d3d;
 }
