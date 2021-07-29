@@ -19,4 +19,7 @@ class ChatUI {
         MESSAGE_FORM.reset();
         updateScroll();
     }
+    clear() {
+        this.list.innerHTML = "";
+    }
 }

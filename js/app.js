@@ -3,7 +3,20 @@ const CHAT_WINDOW = document.querySelector(".chat-window");
 const MESSAGE_FORM = document.querySelector(".message-form");
 const USERNAME_FORM = document.querySelector(".username-form");
 const UPDATE_MSG = document.querySelector(".update-msg");
-const CHATROOM = new Chatroom("general", "dudeNEW");
+const ROOMS_BUTTONS = document.querySelector(".chatroom-buttons");
+
+ROOMS_BUTTONS.addEventListener("click", (event) => {
+    if (event.target.tagName == "BUTTON") {
+        CHAT_UI.clear();
+        CHATROOM.updateRoom(event.target.getAttribute("id"));
+        CHATROOM.getChats((data) => {
+            CHAT_UI.render(data);
+        });
+    }
+});
+
+const USERNAME = localStorage.username ? localStorage.username : "user---";
+const CHATROOM = new Chatroom("general", USERNAME);
 const CHAT_UI = new ChatUI(CHAT_LIST);
 
 updateScroll();

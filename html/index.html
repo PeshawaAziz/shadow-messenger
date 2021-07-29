@@ -18,13 +18,13 @@
     </head>
     <body>
         <!-- container -->
-        <div class="container d-flex flex-column align-items-center my-4">
+        <div class="container d-flex flex-column align-items-center py-2">
             <!-- title -->
             <h1 class="app-title text-light display-6 text-center">
                 Shadow Messenger
             </h1>
             <!-- username form -->
-            <form class="username-form my-3">
+            <form class="username-form my-2">
                 <div class="input-group">
                     <input
                         class="username-input form-control"
@@ -41,23 +41,31 @@
                 <p class="update-msg text-danger"></p>
             </form>
             <!-- chatrooms -->
-            <div class="chatrooms my-3 text-center text-light">
+            <div class="chatrooms text-center text-light">
                 <div>
                     <h3 class="display-6 fs-4">Choose a chatroom:</h3>
                 </div>
-                <div class="my-2">
-                    <button class="btn btn-danger rounded-3">General</button>
-                    <button class="btn btn-danger rounded-3">Gaming</button>
-                    <button class="btn btn-danger rounded-3">Music</button>
-                    <button class="btn btn-danger rounded-3">Science</button>
+                <div class="chatroom-buttons">
+                    <button class="btn btn-danger rounded-3" id="general">
+                        General
+                    </button>
+                    <button class="btn btn-danger rounded-3" id="gaming">
+                        Gaming
+                    </button>
+                    <button class="btn btn-danger rounded-3" id="music">
+                        Music
+                    </button>
+                    <button class="btn btn-danger rounded-3" id="science">
+                        Science
+                    </button>
                 </div>
             </div>
             <!-- chat window -->
-            <div class="chat-window p-3 rounded-3">
+            <div class="chat-window p-3 rounded-3 my-2">
                 <ul class="chat-list text-light list-group list-unstyled"></ul>
             </div>
             <!-- message form -->
-            <form class="message-form my-3">
+            <form class="message-form">
                 <div class="input-group">
                     <input
                         class="message-input form-control"

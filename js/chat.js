@@ -33,6 +33,7 @@ class Chatroom {
     }
     updateName(newName) {
         this.username = newName;
+        localStorage.setItem("username", this.username);
     }
     // Updating the room based on the input
     updateRoom(newRoom) {
